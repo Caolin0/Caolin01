@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- rel: 规定当前文档与被链接文档之间的关系。
+    href: 规定被链接文档的位置。
+    type：规定被链接文档的 MIME 类型。
+    -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"/>
+    <title>列表 ul,ol,dl 元素</title>
+</head>
+<body>
+    <h1>无序列表</h1>
+    <!--无序列表-->
+    <ul type="disc">
+        <li>1111</li>
+        <li>2222
+            <ul>
+                <li>深入嵌套1</li>
+                <li>深入嵌套2
+                    <ul>
+                        <li>超级深入嵌套1</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>3333</li>
+    </ul>
+    <h1>
+        有序列表
+    </h1>
+    <!--有序列表-->
+    <ol type="A">
+        <li>11111</li>
+        <li>22222
+            <ol>
+                <li>aaaaaa</li>
+                <li>bbbbbb</li>
+            </ol>
+        </li>
+    </ol>
+    <h1>描述列表，自定义列表</h1>
+    <dl>
+        <!-- 定义列表中的项目（术语部分） -->
+      <dt>html</dt>
+      <!-- 列表中项目的解释部分 -->
+      <dd>html是超文本标记语言</dd>
+      <dt>css</dt>
+      <dd>css是层叠样式表</dd>
+      <dt>javascript</dt>
+      <dd>js是一个非常强大的语言</dd>
+    </dl>
+</body>
+</html>

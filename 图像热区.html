@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图像热区</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        #rect{
+            position: absolute;
+            left: 577px;
+            top: 94px;
+            width: 100px;
+            height: 306px;
+            border: 1px solid #f00;
+            z-index: 1;
+            display: inline-block;
+        }
+        #circle{
+            position: absolute;
+            left: 150px;
+            top: 0;
+            width: 150px;
+            height: 150px;
+            border: 1px solid #f00;
+            border-radius: 50%;
+            z-index: 1;
+            display: inline-block;
+        }
+    </style>
+</head>
+<!-- usemap设定使用热区元素，带#号 -->
+<!-- coords坐标，0,0，c初始左上角 -->
+<body>
+    <img src="./img/海贼王群像.webp" title="海贼王群像" alt="加载失败" width="800px" usemap="#map">
+
+    <map id="map" name="map">
+        <area id="rect" href="./个人介绍.html" coords="577,94,677,400" shape="rect" target="_blank">
+        <area id="circle" shape="circle" coords="225,75,75" href="./三国演义.html">
+    </map>
+</body>
+</html>

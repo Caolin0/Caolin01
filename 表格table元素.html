@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格</title>
+</head>
+<body>
+    <!-- border边框宽度 -->
+    <!-- width宽度 -->
+    <!-- height高度 -->
+    <!-- align居中 -->
+    <!-- cellspacing单元格的间距 -->
+    <!-- cellpadding 表格边框与内容之间的间距 -->
+    <!-- table 表格
+    caption 表标题
+    tbody 表格内容标签
+    tr 行
+    th 表头单元格， 通常会呈现为居中的粗体文本
+    td 单元格 -->
+    <!-- colspan;列合并，有几个单元格合并值就是多少 -->
+    <!-- rowspan;行合并，有几个单元格合并值就是多少 -->
+    <table border="1" align="center" width="500" cellspacing="0" cellpadding="10">
+        <caption>超级前端1班</caption>
+        <tr align="center"><!--行-->
+            <th>js</th><!--单元格-->
+            <th>css</th>
+            <th>html</th>
+        </tr>
+        <tr align="center"><!--行-->
+            <td colspan="2">单元格1</td><!--单元格-->
+            <!-- <td>单元格2</td>s -->
+            <td rowspan="2">单元格3</td>
+        </tr>
+        <tr align="center"><!--行-->
+            <td>单元格1</td><!--单元格-->
+            <td>单元格2</td>
+            <!-- <td>单元格3</td> -->
+        </tr>
+    </table>
+</body>
+</html>

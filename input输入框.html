@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input输入框</title>
+</head>
+<body>
+    <!-- div容器，占满一行 -->
+    <!-- label标签聚焦选框，跟上for+ID -->
+    <!-- placeholder占位符 -->
+    <!-- autofocus自动聚焦 -->
+    <!-- readonly只读 -->
+    <!-- disabled不可用 -->
+    <label for="accout">账号:</label>
+    <input id="accout" type="text" placeholder="请输入账号" value="123456" autofocus readonly>
+    <div>
+        <label for="password">密码:</label>
+        <input id="password" type="password" placeholder="请输入密码">
+    </div>
+    <input type="number" placeholder="请输入数字">
+    <br>
+    <!-- 单选文件 -->
+    单选<input type="file">
+    <br>
+    <!-- 多选文件 -->
+    多选<input type="file" multiple>
+    <br>
+    <!-- accept只选择
+        image/*，只选择图片 
+        video/*，只选择视频
+        audio/*，只选择音频-->
+    <input type="file" accept="image/*">
+    <br>
+    单选按钮
+    <div>
+        <!-- span文本的内容框 -->
+        <!-- name属性必须相同才能是单选框 -->
+        <!-- value输入值，也可设为默认值 -->
+        在radio和checkbox下checked是默认选中属性
+        <br>
+        <span>单选框</span>
+        
+        <input id="man" type="radio" name="sex" value="man" checked><label for="man">男</label>
+        <input id="woman" type="radio" name="sex" value="woman"><label for="woman">女</label>
+    </div>
+    <div>
+        <span>复选框</span>
+        <input id="xuexi" type="checkbox"><label for="xuexi">学习</label>
+        <input id="daqiu" type="checkbox"><label for="daqiu">打球</label>
+
+    </div>
+    <div>
+        <span>提交标签submit</span>
+        <span>重置标签reset</span>
+        <br>
+        <input type="submit" value="确认提交">
+        <input type="reset">
+        <input type="button" value="按钮">
+    </div>
+    <input type="hidden" value="我是隐藏的值">
+    <input type="color">
+</body>
+</html>

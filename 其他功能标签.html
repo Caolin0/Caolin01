@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>其他功能标签</title>
+</head>
+<body>
+    <div>拼音效果标签ruby和子标签rt</div>
+    <!-- ruby:定义 ruby 注释（中文注音或字符）。 -->
+    <!-- rt: 定义字符（中文注音或字符）的解释或发音。 -->
+    <ruby>
+    阿<rt>a</rt>
+    里<rt>li</rt>
+    王<rt>wang</rt>
+    学<rt>xue</rt>
+    习<rt>xi</rt>
+    前<rt>qian</rt>
+    端<rt>duan</rt>
+    </ruby>
+
+    <div>设置可编辑标签contenteditable</div>
+    <p contenteditable="true">我是P段落标签，可是我也能编辑</p>
+
+    <div>折叠标签details</div>
+    <!-- <details> 标签用于描述文档或文档某个部分的细节。
+    open属性定义details折叠信息一开始是否可见。
+    <summary> 标签包含 details 元素的标题。
+    <details>和<summary>目前只支持Chrome和Safari，兼容性低。 -->
+    <details open="open">
+        <summary>明天的中奖彩票号码</summary>
+        <p>123456789</p>
+        <p>987654321</p>
+    </details>
+</body>
+</html>
